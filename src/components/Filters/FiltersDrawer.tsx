@@ -28,7 +28,7 @@ export const FiltersDrawer: React.FC<FiltersDrawerProps> = ({
   ageGroups,
 }) => {
   const { t } = useTranslation(['sections/events']);
-  const [filters] = useQueryStore('filters');
+  const [filters] = useQueryStore('filters', {});
 
   return (
     <AppDrawer

@@ -1,0 +1,10 @@
+{
+  "../components/EventsMap/EventsMap.tsx -> ./Map": {
+    "id": 59921,
+    "files": [
+      "static/chunks/0b7b90cd.1525f35352317f8c.js",
+      "static/css/d3e383b9ef67ddcb.css",
+      "static/chunks/921.22f3cdc249b0cf04.js"
+    ]
+  }
+}

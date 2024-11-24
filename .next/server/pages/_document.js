@@ -1,0 +1,7 @@
+"use strict";(()=>{var e={};e.id=660,e.ids=[660],e.modules={4684:(e,r,t)=>{t.a(e,async(e,s)=>{try{t.r(r),t.d(r,{default:()=>n});var o=t(997),a=t(6859),c=t(2210),i=e([c]);function n(){return(0,o.jsxs)(a.Html,{children:[(0,o.jsxs)(a.Head,{children:[o.jsx("meta",{name:"color-scheme",content:"dark light"}),o.jsx("script",{dangerouslySetInnerHTML:{__html:`
+              try {
+                const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.documentElement.style.setProperty('background-color', isDark ? '#1A202C' : '#F7FAFC');
+                document.documentElement.style.setProperty('color', isDark ? '#FFFFFF' : '#1A202C');
+              } catch (e) {}
+            `}})]}),(0,o.jsxs)("body",{children:[o.jsx(c.ColorModeScript,{initialColorMode:"system"}),o.jsx(a.Main,{}),o.jsx(a.NextScript,{})]})]})}c=(i.then?(await i)():i)[0],s()}catch(e){s(e)}})},2785:e=>{e.exports=require("next/dist/compiled/next-server/pages.runtime.prod.js")},6689:e=>{e.exports=require("react")},997:e=>{e.exports=require("react/jsx-runtime")},2210:e=>{e.exports=import("@chakra-ui/react")},1017:e=>{e.exports=require("path")}};var r=require("../webpack-runtime.js");r.C(e);var t=e=>r(r.s=e),s=r.X(0,[491,859],()=>t(4684));module.exports=s})();

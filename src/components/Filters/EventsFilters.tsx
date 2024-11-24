@@ -4,7 +4,9 @@ import React, { useMemo } from 'react';
 import { Box } from '@chakra-ui/react';
 import { useTranslation } from 'next-i18next';
 import Form from '@rjsf/chakra-ui';
-import { RJSFSchema, UiSchema } from '@rjsf/utils';
+import type { UiSchema } from '@rjsf/chakra-ui';
+import { JSONSchema7 } from 'json-schema';
+import { FormContextType, RJSFSchema, ValidatorType } from '@rjsf/utils';
 import validator from '@rjsf/validator-ajv8';
 import { getUpdatedSchema, uiSchema } from './schema';
 import { RangeWidget } from './widgets';
@@ -129,7 +131,7 @@ export const EventsFilters: React.FC<EventsFiltersProps> = ({
   return (
     <Box>
       <Form
-        schema={schema as RJSFSchema}
+        schema={schema as JSONSchema7}
         uiSchema={{
           ...uiSchema as UiSchema,
           'ui:submitButtonOptions': {

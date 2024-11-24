@@ -1,127 +1,130 @@
-import { RJSFSchema } from '@rjsf/utils';
-import { UiSchema } from '@rjsf/utils';
+import { JSONSchema7, JSONSchema7Definition } from 'json-schema';
+import { FormContextType, RJSFSchema, UiSchema } from '@rjsf/utils';
 import { TFunction } from 'next-i18next';
 
-export const getFilterSchema = (t: TFunction): RJSFSchema => ({
-  type: 'object',
-  properties: {
-    sportType: {
-      type: 'string',
-      title: t('filter.sportType'),
-      default: '',
-    },
-    period: {
-      type: 'string',
-      title: t('filter.period'),
-      enum: ['', '1month', '3months', '6months', 'custom'],
-      enumNames: [
-        t('filter.all'),
-        t('filter.period.1month'),
-        t('filter.period.3months'),
-        t('filter.period.6months'),
-        t('filter.period.custom')
-      ],
-      default: '',
-    },
-    dateRange: {
-      type: 'object',
-      title: '',
-      properties: {
-        start: {
-          type: 'string',
-          format: 'date',
-          title: t('filter.dateRange.start'),
+export const getFilterSchema = (t: TFunction): JSONSchema7 => {
+  const schema: JSONSchema7 = {
+    type: 'object',
+    properties: {
+      sportType: {
+        type: 'string',
+        title: t('filter.sportType'),
+        default: '',
+      },
+      period: {
+        type: 'string',
+        title: t('filter.period'),
+        enum: ['', '1month', '3months', '6months', 'custom'],
+        oneOf: [
+          { const: '', title: t('filter.all') },
+          { const: '1month', title: t('filter.period.1month') },
+          { const: '3months', title: t('filter.period.3months') },
+          { const: '6months', title: t('filter.period.6months') },
+          { const: 'custom', title: t('filter.period.custom') }
+        ],
+        default: '',
+      },
+      dateRange: {
+        type: 'object',
+        title: '',
+        properties: {
+          start: {
+            type: 'string',
+            format: 'date',
+            title: t('filter.dateRange.start'),
+          },
+          end: {
+            type: 'string',
+            format: 'date',
+            title: t('filter.dateRange.end'),
+          },
         },
-        end: {
+      },
+      countries: {
+        type: 'array',
+        title: t('filter.countries'),
+        items: {
           type: 'string',
-          format: 'date',
-          title: t('filter.dateRange.end'),
         },
+        uniqueItems: true,
+        default: [],
       },
-    },
-    countries: {
-      type: 'array',
-      title: t('filter.countries'),
-      items: {
+      cities: {
+        type: 'array',
+        title: t('filter.cities'),
+        items: {
+          type: 'string',
+        },
+        uniqueItems: true,
+        default: [],
+      },
+      disciplines: {
+        type: 'array',
+        title: t('filter.disciplines'),
+        items: {
+          type: 'string',
+        },
+        uniqueItems: true,
+        default: [],
+      },
+      participantsRange: {
+        type: 'array',
+        title: t('filter.participants'),
+        items: {
+          type: 'number',
+          minimum: 0,
+          maximum: 1000,
+        },
+        minItems: 2,
+        maxItems: 2,
+        default: [0, 1000],
+      },
+      gender: {
         type: 'string',
+        title: t('filter.gender'),
+        enum: ['', 'male', 'female', 'mixed'],
+        oneOf: [
+          { const: '', title: t('filter.all') },
+          { const: 'male', title: t('filter.genderMale') },
+          { const: 'female', title: t('filter.genderFemale') },
+          { const: 'mixed', title: t('filter.genderMixed') }
+        ],
+        default: '',
       },
-      uniqueItems: true,
-      default: [],
-    },
-    cities: {
-      type: 'array',
-      title: t('filter.cities'),
-      items: {
+      ageGroup: {
         type: 'string',
+        title: t('filter.ageGroup'),
+        default: '',
       },
-      uniqueItems: true,
-      default: [],
-    },
-    disciplines: {
-      type: 'array',
-      title: t('filter.disciplines'),
-      items: {
+      eventType: {
         type: 'string',
+        title: t('filter.eventType'),
+        enum: ['', 'regional', 'national', 'international'],
+        oneOf: [
+          { const: '', title: t('filter.all') },
+          { const: 'regional', title: t('filter.eventTypeRegional') },
+          { const: 'national', title: t('filter.eventTypeNational') },
+          { const: 'international', title: t('filter.eventTypeInternational') }
+        ],
+        default: '',
       },
-      uniqueItems: true,
-      default: [],
-    },
-    participantsRange: {
-      type: 'array',
-      title: t('filter.participants'),
-      items: {
-        type: 'number',
-        minimum: 0,
-        maximum: 1000,
+      status: {
+        type: 'string',
+        title: t('filter.status'),
+        enum: ['', 'draft', 'published', 'cancelled', 'completed'],
+        oneOf: [
+          { const: '', title: t('filter.all') },
+          { const: 'draft', title: t('status.draft') },
+          { const: 'published', title: t('status.published') },
+          { const: 'cancelled', title: t('status.cancelled') },
+          { const: 'completed', title: t('status.completed') }
+        ],
+        default: '',
       },
-      minItems: 2,
-      maxItems: 2,
-      default: [0, 1000],
     },
-    gender: {
-      type: 'string',
-      title: t('filter.gender'),
-      enum: ['', 'male', 'female', 'mixed'],
-      enumNames: [
-        t('filter.all'),
-        t('filter.genderMale'),
-        t('filter.genderFemale'),
-        t('filter.genderMixed')
-      ],
-      default: '',
-    },
-    ageGroup: {
-      type: 'string',
-      title: t('filter.ageGroup'),
-      default: '',
-    },
-    eventType: {
-      type: 'string',
-      title: t('filter.eventType'),
-      enum: ['', 'regional', 'national', 'international'],
-      enumNames: [
-        t('filter.all'),
-        t('filter.eventTypeRegional'),
-        t('filter.eventTypeNational'),
-        t('filter.eventTypeInternational')
-      ],
-      default: '',
-    },
-    status: {
-      type: 'string',
-      title: t('filter.status'),
-      enum: ['', 'draft', 'published', 'cancelled', 'completed'],
-      enumNames: [
-        t('filter.all'),
-        t('status.draft'),
-        t('status.published'),
-        t('status.cancelled'),
-        t('status.completed')
-      ],
-      default: '',
-    },
-  },
-});
+  };
+  return schema;
+};
 
 export const uiSchema: UiSchema = {
   'ui:submitButtonOptions': {
@@ -166,46 +169,62 @@ export const getUpdatedSchema = (
   cities: string[],
   countries: string[],
   ageGroups: string[],
-): RJSFSchema => {
+): JSONSchema7 => {
   const baseSchema = getFilterSchema(t);
-  return {
+  const schema: JSONSchema7 = {
     ...baseSchema,
     properties: {
-      ...baseSchema.properties,
+      ...(baseSchema.properties as { [key: string]: JSONSchema7 }),
       sportType: {
-        ...baseSchema.properties.sportType,
+        ...(baseSchema.properties?.sportType as JSONSchema7),
         enum: ['', ...sportTypes],
-        enumNames: [t('filter.all'), ...sportTypes.map(type => t(`sports.${type}`))],
+        oneOf: [
+          { const: '', title: t('filter.all') },
+          ...sportTypes.map(type => ({ const: type, title: t(`sports.${type}`) })),
+        ],
       },
       disciplines: {
-        ...baseSchema.properties.disciplines,
+        ...(baseSchema.properties?.disciplines as JSONSchema7),
         items: {
-          ...baseSchema.properties.disciplines.items,
+          ...(baseSchema.properties?.disciplines as JSONSchema7).items as JSONSchema7,
           enum: ['', ...disciplines],
-          enumNames: [t('filter.all'), ...disciplines.map(disc => t(`disciplines.${disc}`))],
+          oneOf: [
+            { const: '', title: t('filter.all') },
+            ...disciplines.map(disc => ({ const: disc, title: t(`disciplines.${disc}`) })),
+          ],
         },
       },
       cities: {
-        ...baseSchema.properties.cities,
+        ...(baseSchema.properties?.cities as JSONSchema7),
         items: {
-          ...baseSchema.properties.cities.items,
+          ...(baseSchema.properties?.cities as JSONSchema7).items as JSONSchema7,
           enum: ['', ...cities],
-          enumNames: [t('filter.all'), ...cities],
+          oneOf: [
+            { const: '', title: t('filter.all') },
+            ...cities.map(city => ({ const: city, title: city })),
+          ],
         },
       },
       countries: {
-        ...baseSchema.properties.countries,
+        ...(baseSchema.properties?.countries as JSONSchema7),
         items: {
-          ...baseSchema.properties.countries.items,
+          ...(baseSchema.properties?.countries as JSONSchema7).items as JSONSchema7,
           enum: ['', ...countries],
-          enumNames: [t('filter.all'), ...countries],
+          oneOf: [
+            { const: '', title: t('filter.all') },
+            ...countries.map(country => ({ const: country, title: country })),
+          ],
         },
       },
       ageGroup: {
-        ...baseSchema.properties.ageGroup,
+        ...(baseSchema.properties?.ageGroup as JSONSchema7),
         enum: ['', ...ageGroups],
-        enumNames: [t('filter.all'), ...ageGroups],
+        oneOf: [
+          { const: '', title: t('filter.all') },
+          ...ageGroups.map(ageGroup => ({ const: ageGroup, title: ageGroup })),
+        ],
       },
     },
   };
+  return schema;
 };

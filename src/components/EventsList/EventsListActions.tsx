@@ -142,7 +142,7 @@ export const EventsListActions: React.FC<EventsListActionsProps> = ({
               formData={selectedEvent}
               onSubmit={handleSubmit}
               // Локализация формы
-              translateString={id => t(id)}
+              translateString={(id: string) => t(id)}
             >
               <ButtonGroup mt={4} spacing={4} width="100%">
                 <Button type="submit" colorScheme="blue" size="lg">

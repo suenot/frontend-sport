@@ -9,6 +9,7 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { WidgetProps } from '@rjsf/utils';
+import { JSONSchema7 } from 'json-schema';
 import { useTranslation } from 'next-i18next';
 
 export const RangeWidget = ({
@@ -19,9 +20,10 @@ export const RangeWidget = ({
   label,
 }: WidgetProps) => {
   const { t } = useTranslation(['sections/events']);
-  const min = schema.items?.minimum || 0;
-  const max = schema.items?.maximum || 1000;
-  const step = schema.items?.multipleOf || 50;
+  const items = (schema.items as JSONSchema7);
+  const min = items?.minimum || 0;
+  const max = items?.maximum || 1000;
+  const step = items?.multipleOf || 50;
 
   return (
     <VStack spacing={2} align="stretch">

@@ -1,7 +1,7 @@
-import { RJSFSchema } from '@rjsf/utils';
+import { JSONSchema7 } from 'json-schema';
 import { TFunction } from 'next-i18next';
 
-export const getEventSchema = (t: TFunction): RJSFSchema => ({
+export const getEventSchema = (t: TFunction): JSONSchema7 => ({
   type: 'object',
   required: ['title', 'shortDescription', 'sportType', 'discipline', 'location', 'stages'],
   properties: {
