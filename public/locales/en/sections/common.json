@@ -1,0 +1,77 @@
+{
+  "navigation": {
+    "home": "Home",
+    "events": "Events",
+    "calendar": "Calendar",
+    "map": "Map",
+    "profile": "Profile",
+    "settings": "Settings"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "forgotPassword": "Forgot Password?",
+    "resetPassword": "Reset Password"
+  },
+  "roles": {
+    "user": "User",
+    "manager": "Manager",
+    "admin": "Administrator"
+  },
+  "theme": {
+    "light": "Light Theme",
+    "dark": "Dark Theme",
+    "system": "System Theme"
+  },
+  "language": {
+    "ru": "Русский",
+    "en": "English"
+  },
+  "notifications": {
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Information"
+  },
+  "buttons": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "confirm": "Confirm"
+  },
+  "loading": {
+    "default": "Loading...",
+    "data": "Loading data...",
+    "page": "Loading page..."
+  },
+  "errors": {
+    "default": "Something went wrong",
+    "network": "Network error",
+    "notFound": "Not found",
+    "accessDenied": "Access denied",
+    "validation": "Validation error"
+  },
+  "pagination": {
+    "prev": "Previous",
+    "next": "Next",
+    "page": "Page {{page}} of {{total}}",
+    "perPage": "Show {{count}} per page"
+  },
+  "search": {
+    "placeholder": "Search...",
+    "noResults": "No results found",
+    "searching": "Searching..."
+  },
+  "drawer": {
+    "close": "Close panel"
+  },
+  "modal": {
+    "close": "Close modal"
+  }
+}

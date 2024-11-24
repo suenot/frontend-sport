@@ -1,0 +1,234 @@
+{
+  "title": "Мероприятия",
+  "eventsList": "Список мероприятий",
+  "noEvents": "Нет доступных мероприятий",
+  "location": "Место проведения",
+  "sportType": "Вид спорта",
+  "stages": "Этапы",
+  "details": "Детали мероприятия",
+  "list": "Список",
+  "grid": "Сетка",
+  "calendar": "Календарь",
+  "map": "Карта",
+  "listView": "В виде списка",
+  "gridView": "В виде сетки",
+  "calendarView": "В виде календаря",
+  "mapView": "На карте",
+  "filters": "Фильтры",
+  "filter": {
+    "title": "Фильтры",
+    "apply": "Применить",
+    "reset": "Сбросить",
+    "close": "Закрыть",
+    "sportType": "Вид спорта",
+    "disciplines": "Дисциплины",
+    "cities": "Города",
+    "countries": "Страны",
+    "participants": "Количество участников",
+    "gender": "Пол",
+    "ageGroup": "Возрастная группа",
+    "eventType": "Тип мероприятия",
+    "period": "Период",
+    "period.1month": "1 месяц",
+    "period.3months": "3 месяца",
+    "period.6months": "6 месяцев",
+    "period.custom": "Другой период",
+    "dateRange": "Период проведения",
+    "dateRange.start": "Начало",
+    "dateRange.end": "Окончание",
+    "status": "Статус",
+    "all": "Все",
+    "genderMale": "Мужской",
+    "genderFemale": "Женский",
+    "genderMixed": "Смешанный",
+    "eventTypeRegional": "Региональное",
+    "eventTypeNational": "Национальное",
+    "eventTypeInternational": "Международное",
+    "subscribe": "Подписаться на фильтры",
+    "subscribeAlert": "Получайте уведомления о новых мероприятиях по вашим фильтрам",
+    "subscribeTelegram": "Подписаться в Telegram"
+  },
+  "status": {
+    "published": "Опубликовано",
+    "draft": "Черновик",
+    "cancelled": "Отменено",
+    "completed": "Завершено"
+  },
+  "stage": {
+    "status": {
+      "upcoming": "Предстоит",
+      "ongoing": "В процессе",
+      "completed": "Завершен",
+      "cancelled": "Отменен"
+    },
+    "title": "Этап {{number}}: {{name}}",
+    "type": {
+      "registration": "Регистрация",
+      "qualification": "Квалификация",
+      "semifinal": "Полуфинал",
+      "final": "Финал",
+      "other": "Другое"
+    }
+  },
+  "sports": {
+    "swimming": "Плавание",
+    "athletics": "Легкая атлетика",
+    "gymnastics": "Гимнастика",
+    "boxing": "Бокс",
+    "wrestling": "Борьба",
+    "football": "Футбол",
+    "basketball": "Баскетбол",
+    "volleyball": "Волейбол",
+    "tennis": "Теннис",
+    "hockey": "Хоккей"
+  },
+  "disciplines": {
+    "freestyle": "Вольный стиль",
+    "butterfly": "Баттерфляй",
+    "sprint": "Спринт",
+    "marathon": "Марафон",
+    "artistic": "Художественная",
+    "rhythmic": "Ритмическая",
+    "lightweight": "Легкий вес",
+    "heavyweight": "Тяжелый вес",
+    "greco-roman": "Греко-римская",
+    "freestyle-wrestling": "Вольная борьба",
+    "professional": "Профессионалы",
+    "amateur": "Любители",
+    "junior": "Юниоры",
+    "veteran": "Ветераны"
+  },
+  "actions": {
+    "editEvent": "Редактировать мероприятие",
+    "deleteEvent": "Удалить мероприятие",
+    "addEvent": "Добавить мероприятие",
+    "viewEvent": "Просмотр мероприятия",
+    "saveEvent": "Сохранить мероприятие",
+    "cancelEdit": "Отменить редактирование",
+    "confirmDelete": "Подтвердить удаление",
+    "closeDetails": "Закрыть детали",
+    "save": "Сохранить",
+    "cancel": "Отменить",
+    "role": "Текущая роль: {{role}}",
+    "roleManager": "Менеджер",
+    "roleUser": "Пользователь"
+  },
+  "filters": {
+    "title": "Фильтры",
+    "settings": "Настройки фильтров",
+    "apply": "Применить",
+    "reset": "Сбросить",
+    "all": "Все",
+    "sportType": "Вид спорта",
+    "disciplines": "Дисциплины",
+    "cities": "Города",
+    "participants": "Количество участников",
+    "participantsRange": "От {{min}} до {{max}} участников",
+    "gender": "Пол",
+    "genderMale": "Мужской",
+    "genderFemale": "Женский",
+    "genderMixed": "Смешанный",
+    "ageGroup": "Возрастная группа",
+    "eventType": "Тип мероприятия",
+    "eventTypeRegional": "Региональное",
+    "eventTypeNational": "Национальное",
+    "eventTypeInternational": "Международное",
+    "dateRange": {
+      "title": "Период проведения",
+      "start": "Начало",
+      "end": "Окончание"
+    },
+    "status": "Статус",
+    "date": {
+      "label": "Дата",
+      "start": "Начало",
+      "end": "Окончание"
+    },
+    "location": {
+      "label": "Место проведения",
+      "country": "Страна",
+      "city": "Город",
+      "venue": "Площадка"
+    },
+    "sport": {
+      "label": "Вид спорта",
+      "discipline": "Дисциплина"
+    }
+  },
+  "form": {
+    "editTitle": "Редактирование мероприятия",
+    "addTitle": "Добавление мероприятия",
+    "editSuccess": "Мероприятие успешно обновлено",
+    "addSuccess": "Мероприятие успешно создано",
+    "error": "Произошла ошибка",
+    "title": "Название",
+    "titlePlaceholder": "Введите название мероприятия",
+    "shortDescription": "Краткое описание",
+    "shortDescriptionPlaceholder": "Введите краткое описание мероприятия",
+    "description": "Описание",
+    "descriptionPlaceholder": "Введите полное описание мероприятия",
+    "sportType": "Вид спорта",
+    "sportTypePlaceholder": "Выберите вид спорта",
+    "discipline": "Дисциплина",
+    "disciplinePlaceholder": "Выберите дисциплину",
+    "eventType": "Тип мероприятия",
+    "types": {
+      "regional": "Региональное",
+      "national": "Национальное",
+      "international": "Международное"
+    },
+    "location": {
+      "city": "Город",
+      "cityPlaceholder": "Введите город",
+      "venue": "Место проведения",
+      "venuePlaceholder": "Введите место проведения",
+      "address": "Адрес",
+      "addressPlaceholder": "Введите адрес"
+    }
+  },
+  "calendar": {
+    "months": {
+      "January": "Январь",
+      "February": "Февраль",
+      "March": "Март",
+      "April": "Апрель",
+      "May": "Май",
+      "June": "Июнь",
+      "July": "Июль",
+      "August": "Август",
+      "September": "Сентябрь",
+      "October": "Октябрь",
+      "November": "Ноябрь",
+      "December": "Декабрь"
+    },
+    "weekDays": {
+      "monday": "Понедельник",
+      "tuesday": "Вторник",
+      "wednesday": "Среда",
+      "thursday": "Четверг",
+      "friday": "Пятница",
+      "saturday": "Суббота",
+      "sunday": "Воскресенье"
+    },
+    "short": {
+      "year": "г",
+      "month": "мес",
+      "day": "д",
+      "hour": "ч"
+    },
+    "zoomLevel": {
+      "day": "День",
+      "week": "Неделя",
+      "month": "Месяц",
+      "quarter": "Квартал",
+      "year": "Год"
+    },
+    "tooltips": {
+      "today": "Сегодня",
+      "zoomIn": "Приблизить",
+      "zoomOut": "Отдалить",
+      "moveLeft": "Влево",
+      "moveRight": "Вправо"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "landing": {
+    "hero": {
+      "title": "Sports Events Made Simple",
+      "description": "Platform for organizing and participating in sports events",
+      "cta": "Get Started"
+    },
+    "stats": {
+      "participants": {
+        "label": "active participants",
+        "description": "Athletes from around the world trust us with organizing their training and competitions"
+      },
+      "events": {
+        "label": "events conducted",
+        "description": "From amateur runs to professional tournaments - we help organize events of any scale"
+      },
+      "countries": {
+        "label": "countries present",
+        "description": "Our community unites athletes and organizers from all corners of the planet"
+      }
+    },
+    "problems": {
+      "title": "Problems We Solve",
+      "description": "Sports event organization can be complex. We make it simple.",
+      "features": {
+        "sync": {
+          "title": "Synchronization",
+          "description": "Automatic synchronization of schedules and calendars"
+        },
+        "search": {
+          "title": "Search",
+          "description": "Smart search for events and participants"
+        },
+        "notifications": {
+          "title": "Notifications",
+          "description": "Timely reminders about important events"
+        }
+      }
+    },
+    "advantages": {
+      "title": "Our Advantages",
+      "items": [
+        "💻 Simple and intuitive interface",
+        "🤖 Convenient management via Telegram bot",
+        "🗺️ Interactive OpenStreetMap",
+        "📊 Gantt chart for planning",
+        "🔔 Notification system via Telegram and Email"
+      ]
+    },
+    "tech": {
+      "title": "Technologies",
+      "frontend": {
+        "title": "Frontend",
+        "items": [
+          "React & Next.js",
+          "TypeScript",
+          "Chakra UI"
+        ]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": [
+          "Flask",
+          "PostgreSQL"
+        ]
+      },
+      "integrations": {
+        "title": "Integrations",
+        "items": [
+          "REST API",
+          "gRPC",
+          "OAuth 2.0"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to Start?",
+      "description": "Join thousands of organizers already using our platform",
+      "button": "Try for Free"
+    }
+  },
+  "events": {
+    "noEvents": "No events available",
+    "location": "Location",
+    "sportType": "Sport Type",
+    "stages": "Stages",
+    "status": {
+      "published": "Published",
+      "draft": "Draft",
+      "cancelled": "Cancelled",
+      "completed": "Completed"
+    },
+    "stage": {
+      "status": {
+        "upcoming": "Upcoming",
+        "ongoing": "Ongoing",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+      },
+      "title": "Stage {{number}}: {{name}}"
+    },
+    "sports": {
+      "swimming": "Swimming",
+      "athletics": "Athletics",
+      "gymnastics": "Gymnastics",
+      "boxing": "Boxing",
+      "wrestling": "Wrestling"
+    },
+    "disciplines": {
+      "freestyle": "Freestyle",
+      "butterfly": "Butterfly",
+      "sprint": "Sprint",
+      "marathon": "Marathon",
+      "artistic": "Artistic",
+      "rhythmic": "Rhythmic",
+      "lightweight": "Lightweight",
+      "heavyweight": "Heavyweight",
+      "greco-roman": "Greco-Roman",
+      "freestyle-wrestling": "Freestyle Wrestling"
+    },
+    "actions": {
+      "editEvent": "Edit Event",
+      "deleteEvent": "Delete Event"
+    }
+  }
+}

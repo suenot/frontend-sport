@@ -1,0 +1,165 @@
+{
+  "hero": {
+    "title": "Sports Competition Calendar",
+    "description": "A unified platform for tracking sports competitions worldwide",
+    "cta": "Get Started"
+  },
+  "stats": {
+    "participants": {
+      "label": "active participants",
+      "description": "Athletes from around the world trust us with organizing their training and competitions"
+    },
+    "events": {
+      "label": "events conducted",
+      "description": "From amateur runs to professional tournaments - we help organize events of any scale"
+    },
+    "countries": {
+      "label": "countries present",
+      "description": "Our community unites athletes and organizers from all corners of the planet"
+    }
+  },
+  "problems": {
+    "title": "Problems We Solve",
+    "description": "Key challenges we address",
+    "features": {
+      "sync": {
+        "title": "Data Synchronization",
+        "description": "Automatic synchronization of competition information from various sources"
+      },
+      "search": {
+        "title": "Smart Search",
+        "description": "Quick search for competitions using various parameters"
+      },
+      "notifications": {
+        "title": "Notifications",
+        "description": "Timely alerts about important events and changes"
+      }
+    }
+  },
+  "competitions": {
+    "title": "Find Competitions",
+    "features": {
+      "countries": {
+        "title": "By Countries",
+        "description": "Filter competitions by host countries"
+      },
+      "disciplines": {
+        "title": "By Disciplines",
+        "description": "Choose your preferred sports disciplines"
+      },
+      "dates": {
+        "title": "By Dates",
+        "description": "Search for competitions within specific time periods"
+      }
+    }
+  },
+  "team": {
+    "title": "Our Team",
+    "roles": {
+      "teamLead": "Team Lead",
+      "ml": "ML Engineer",
+      "fullstack": "Fullstack Developer"
+    }
+  },
+  "architecture": {
+    "title": "Solution Architecture",
+    "description": "Modern scalable architecture using cutting-edge technologies"
+  },
+  "screencast": {
+    "title": "Product Demo"
+  },
+  "features": {
+    "title": "Key Features",
+    "items": [
+      "Automatic competition data collection",
+      "Smart filtering and search system",
+      "Interactive competition map",
+      "Personalized notifications",
+      "Calendar integration",
+      "Analytics and statistics"
+    ]
+  },
+  "useCases": {
+    "title": "Use Cases",
+    "items": [
+      "Planning competition participation",
+      "Tracking competitions by specific disciplines",
+      "Analyzing competition geography",
+      "Team and athlete coordination",
+      "Schedule change monitoring"
+    ]
+  },
+  "roadmap": {
+    "title": "Product Development",
+    "phases": [
+      {
+        "title": "Phase 1",
+        "items": [
+          "Basic search functionality",
+          "Integration with main data sources",
+          "Notification system"
+        ]
+      },
+      {
+        "title": "Phase 2",
+        "items": [
+          "Advanced analytics",
+          "Mobile application",
+          "API for integrations"
+        ]
+      },
+      {
+        "title": "Phase 3",
+        "items": [
+          "Artificial Intelligence",
+          "Social features",
+          "Geographic expansion"
+        ]
+      }
+    ]
+  },
+  "advantages": {
+    "title": "Advantages",
+    "items": [
+      "Time savings on competition search",
+      "Up-to-date information from verified sources",
+      "User-friendly planning interface",
+      "Integration with popular services"
+    ]
+  },
+  "tech": {
+    "title": "Technology Stack",
+    "frontend": {
+      "title": "Frontend",
+      "items": [
+        "React",
+        "Next.js",
+        "Chakra UI",
+        "TypeScript"
+      ]
+    },
+    "backend": {
+      "title": "Backend",
+      "items": [
+        "Node.js",
+        "PostgreSQL",
+        "Redis",
+        "GraphQL"
+      ]
+    },
+    "integrations": {
+      "title": "Integrations",
+      "items": [
+        "REST API",
+        "WebSocket",
+        "OAuth 2.0",
+        "Webhooks"
+      ]
+    }
+  },
+  "cta": {
+    "title": "Ready to Start?",
+    "description": "Join our platform today",
+    "button": "Try for Free"
+  }
+}

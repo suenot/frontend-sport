@@ -1,0 +1,77 @@
+{
+  "navigation": {
+    "home": "Главная",
+    "events": "Мероприятия",
+    "calendar": "Календарь",
+    "map": "Карта",
+    "profile": "Профиль",
+    "settings": "Настройки"
+  },
+  "auth": {
+    "login": "Войти",
+    "logout": "Выйти",
+    "register": "Регистрация",
+    "forgotPassword": "Забыли пароль?",
+    "resetPassword": "Сбросить пароль"
+  },
+  "roles": {
+    "user": "Пользователь",
+    "manager": "Менеджер",
+    "admin": "Администратор"
+  },
+  "theme": {
+    "light": "Светлая тема",
+    "dark": "Темная тема",
+    "system": "Системная тема"
+  },
+  "language": {
+    "ru": "Русский",
+    "en": "English"
+  },
+  "notifications": {
+    "success": "Успешно",
+    "error": "Ошибка",
+    "warning": "Предупреждение",
+    "info": "Информация"
+  },
+  "buttons": {
+    "submit": "Отправить",
+    "cancel": "Отмена",
+    "save": "Сохранить",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "close": "Закрыть",
+    "back": "Назад",
+    "next": "Далее",
+    "confirm": "Подтвердить"
+  },
+  "loading": {
+    "default": "Загрузка...",
+    "data": "Загрузка данных...",
+    "page": "Загрузка страницы..."
+  },
+  "errors": {
+    "default": "Что-то пошло не так",
+    "network": "Ошибка сети",
+    "notFound": "Не найдено",
+    "accessDenied": "Доступ запрещен",
+    "validation": "Ошибка валидации"
+  },
+  "pagination": {
+    "prev": "Предыдущая",
+    "next": "Следующая",
+    "page": "Страница {{page}} из {{total}}",
+    "perPage": "Показать по {{count}}"
+  },
+  "search": {
+    "placeholder": "Поиск...",
+    "noResults": "Ничего не найдено",
+    "searching": "Поиск..."
+  },
+  "drawer": {
+    "close": "Закрыть панель"
+  },
+  "modal": {
+    "close": "Закрыть окно"
+  }
+}
