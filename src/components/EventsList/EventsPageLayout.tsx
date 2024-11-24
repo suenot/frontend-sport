@@ -7,7 +7,6 @@ import { Navbar } from '../common/Navbar';
 import { ReactNode } from 'react';
 
 interface EventsPageLayoutProps {
-  title?: string;
   role?: 'user' | 'manager';
   onRoleChange?: (role: 'user' | 'manager') => void;
   children?: ReactNode;
@@ -15,7 +14,6 @@ interface EventsPageLayoutProps {
 }
 
 export const EventsPageLayout: React.FC<EventsPageLayoutProps> = ({
-  title,
   role = 'user',
   onRoleChange,
   children,
@@ -24,7 +22,6 @@ export const EventsPageLayout: React.FC<EventsPageLayoutProps> = ({
   return (
     <VStack h="100vh" spacing={0}>
       <Navbar 
-        title={title}
         role={role}
         onRoleChange={onRoleChange}
       />

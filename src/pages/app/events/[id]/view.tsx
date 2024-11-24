@@ -40,7 +40,7 @@ export default function EventViewPage() {
   const title = `${t(`events.sports.${event.sportType}`)} - ${event.title.split(' - ')[1]}`;
 
   return (
-    <EventsPageLayout title={title}>
+    <EventsPageLayout>
       <VStack spacing={6} align="stretch">
         {event.media?.thumbnails?.[0] && (
           <Image

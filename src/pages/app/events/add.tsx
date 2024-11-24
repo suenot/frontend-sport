@@ -24,7 +24,7 @@ export default function EventAddPage() {
   };
 
   return (
-    <EventsPageLayout title={t('events.form.addTitle')}>
+    <EventsPageLayout>
       <Box maxW="container.md" mx="auto">
         <EventForm
           onSubmit={handleSubmit}

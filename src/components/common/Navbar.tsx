@@ -6,7 +6,6 @@ import {
   IconButton,
   Button,
   ButtonGroup,
-  Heading,
   Container,
   useColorMode
 } from '@chakra-ui/react';
@@ -15,15 +14,14 @@ import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { memo, useCallback } from 'react';
 import { TelegramAuthButton } from './TelegramAuthButton';
+import { Logo } from './Logo';
 
 interface NavbarProps {
-  title?: string;
   role?: 'user' | 'manager';
   onRoleChange?: (role: 'user' | 'manager') => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = memo(({ 
-  title,
   role = 'user',
   onRoleChange 
 }) => {
@@ -62,9 +60,7 @@ export const Navbar: React.FC<NavbarProps> = memo(({
           h="48px"
           w="100%"
         >
-          <Box>
-            <Heading size="md">{title}</Heading>
-          </Box>
+          <Logo />
           
           <Flex alignItems="center" gap={4}>
             <ButtonGroup size="sm" isAttached variant="outline">

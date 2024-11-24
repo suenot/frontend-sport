@@ -11,7 +11,6 @@ export default function AppHome() {
 
   return (
     <EventsPageLayout 
-      title={t('title')}
       role={role}
       onRoleChange={setRole}
       showEventsList={true}

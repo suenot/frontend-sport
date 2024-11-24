@@ -37,7 +37,7 @@ export default function EventEditPage() {
   }
 
   return (
-    <EventsPageLayout title={t('events.form.editTitle')}>
+    <EventsPageLayout>
       <Box maxW="container.md" mx="auto">
         <EventForm
           event={event}
